@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP para Tornillería - Detalles del Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .project-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            color: var(--text-main);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+        }
+        .back-btn:hover {
+            color: var(--primary);
+        }
+        .project-page .project-gallery img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+            background: rgba(0,0,0,0.5);
+        }
+        .feature-list {
+            margin-top: 2rem;
+        }
+        .feature-list h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-family: 'Fira Code', monospace;
+        }
+        .feature-list ul {
+            list-style: none;
+        }
+        .feature-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+        .feature-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project-page">
+        <a href="index.html#projects" class="back-btn">← Volver al portafolio</a>
+        
+        <h1 class="section-title" style="text-align: left; margin-bottom: 1rem;">ERP para Tornillería</h1>
+        
+        <div class="tech-stack" style="margin-bottom: 2rem;">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MySQL</span>
+        </div>
+
+        <p style="font-size: 1.15rem; line-height: 1.8;">
+            Sistema integral diseñado para la gestión de una tornillería. Permite el control de inventario por tipo, medida y material,
+            seguimiento de ventas, gestión de proveedores y control de entradas y salidas de productos.
+            Incluye reportes en tiempo real para la toma de decisiones.
+        </p>
+
+        <div class="project-gallery" style="display: block;">
+            <img src="fotos/ERP.png" alt="ERP Tornillería">
+        </div>
+
+        <div class="feature-list">
+            <h3>Características Principales</h3>
+            <ul>
+                <li>Control de inventario exhaustivo parametrizado por tipo, medida y material tridimensional.</li>
+                <li>Gestión eficiente del ciclo de vida de compras, ventas y coordinación automatizada con proveedores a gran escala.</li>
+                <li>Generación de reportes dinámicos en tiempo real para monitoreo y control de flujos de caja.</li>
+                <li>Monitorización precisa del control de entradas y salidas de productos con historiales completos de auditoría.</li>
+                <li>Arquitectura escalable basada en la pila tecnológica de Node JS y React con SQL.</li>
+                <li>Dashboard avanzado de análisis visual y de métricas clave enfocado a la toma oportuna de decisiones directivas y comerciales.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas Veterinarias - Detalles del Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .project-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            color: var(--text-main);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+        }
+        .back-btn:hover {
+            color: var(--primary);
+        }
+        .project-page .project-gallery img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+            background: rgba(0,0,0,0.5);
+        }
+        .feature-list {
+            margin-top: 2rem;
+        }
+        .feature-list h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-family: 'Fira Code', monospace;
+        }
+        .feature-list ul {
+            list-style: none;
+        }
+        .feature-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+        .feature-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project-page">
+        <a href="index.html#projects" class="back-btn">← Volver al portafolio</a>
+        
+        <h1 class="section-title" style="text-align: left; margin-bottom: 1rem;">Gestión de Citas Veterinarias</h1>
+        
+        <div class="tech-stack" style="margin-bottom: 2rem;">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Windows Forms</span>
+            <span class="tech-tag">SQL Server</span>
+        </div>
+
+        <p style="font-size: 1.15rem; line-height: 1.8;">
+            Aplicación de escritorio desarrollada en C++ con Windows Forms para la administración de citas en una clínica veterinaria.
+            Permite registrar mascotas y propietarios, agendar consultas, llevar control de historiales médicos y gestionar la disponibilidad de horarios.
+            Incluye validaciones para evitar conflictos de citas y mejorar la atención al cliente.
+        </p>
+
+        <div class="project-gallery" style="display: block;">
+            <img src="fotos/CITAS.png" alt="Sistema de Citas Veterinarias">
+        </div>
+
+        <div class="feature-list">
+            <h3>Características Principales</h3>
+            <ul>
+                <li>Registro detallado de mascotas, propietarios e historiales clínicos completos.</li>
+                <li>Agenda interactiva para programación de consultas médicas e intervenciones.</li>
+                <li>Gestión y configuración de disponibilidad de horarios para los médicos veterinarios de turno.</li>
+                <li>Validaciones automáticas incorporadas para evitar conflictos o sobreposición de citas en los calendarios.</li>
+                <li>Interfaz de usuario limpia y enfocada en optimizar el tiempo de atención al cliente.</li>
+                <li>Base de datos robusta usando SQL Server para garantizar una alta seguridad y persistencia de datos históricos.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
